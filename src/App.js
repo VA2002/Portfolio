@@ -351,7 +351,7 @@ export function Projects() {
     desc: "The Portfolio page you are on, made using ReactJS",
     video: null,
     bestbrowser: "Google Chrome",
-    github: "https://r.mtdv.me/videos/G6mWPAtSuB"
+    github: "https://github.com/VA2002/Portfolio/tree/main"
   };
 
   //All objects stored in an array
