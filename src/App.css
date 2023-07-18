@@ -1,0 +1,587 @@
+@font-face {
+  font-family: League Spartan;
+  src: url(LeagueSpartan-Bold.otf);
+}
+
+a {
+  text-decoration: none;
+}
+
+.Navigation {
+  background-color: white;
+  color: black;
+  font-family: 'Bahnschrift';
+  /* border: 5px solid black; */
+  width: 101%;
+  height: 8%;
+  margin-left: -1%;
+  box-shadow: 2px 2px 10px black;
+  position: fixed;
+  z-index: 20;
+}
+
+#Logo {
+  height: 85%;
+  width: 15%;
+  margin-left: 3%;
+  margin-top: 0.3%;
+}
+
+.Thelinks {
+  margin-left: 70%;
+  margin-top: -2.9%;
+  width: 10%;
+}
+
+#Navlink {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+#Navlink:hover {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+  transition: 0.5s;
+}
+
+.Home{
+  height: 200%;
+  /* min-height: 700px; */
+  background-image: linear-gradient(60deg, #1EA5E0, rgb(133, 213, 247));
+  background-size: 900% 900%;
+  height: 100vh;
+  animation: gradient 8s ease infinite; /*Animation added to gradient*/
+}
+
+.About{
+  height: 200%;
+  background-image: linear-gradient(60deg, rgb(24, 105, 236), rgb(76, 138, 238));
+  background-size: 900% 900%;
+  height: 100vh;
+  animation: gradient 8s ease infinite; /*Animation added to gradient*/
+}
+
+.Projects{
+  height: 200%;
+  background-image: linear-gradient(60deg, rgb(38, 66, 230), rgb(65, 88, 223));
+  background-size: 900% 900%;
+  height: 100vh;
+  animation: gradient 8s ease infinite; /*Animation added to gradient*/
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.Intro {
+  font-family: 'League Spartan';
+  color: white;
+  text-align: center;
+  font-size: 44px;
+  text-shadow: 2px 2px 3px black;
+  margin-top: -34%;
+  animation: appearone 1.1s;
+  /* position: fixed;
+  margin-left: 17%; */
+}
+
+@keyframes appearone {
+  0% {opacity: 0%;}
+  50% {opacity: 100%;}
+}
+
+@keyframes appeartwo {
+  0% {opacity: 0%;}
+  50% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+@keyframes appearthree {
+  0% {opacity: 0%;}
+  100% {opacity: 80%;}
+}
+
+#Profession {
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 33px;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  margin-left: 2.7%;
+  margin: 0 auto;
+  text-align: center;
+  animation: 
+    typing 3.5s steps(40, end)
+    /* ,blink-caret .75s step-end infinite; */
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0px; opacity: 30%;    margin: 0 auto;  }
+100% { width: 100%; opacity: 100%;     margin: 0 auto;}
+}
+
+/* The typewriter cursor effect
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+} */
+
+.Formbutton {
+  background-color: transparent;
+  color: white;
+  width: 15%;
+  min-width: 140px;
+  height: 50px;
+  border-radius: 55px;
+  border: 3px solid white;
+  font-size: 28px;
+  font-family: 'Bahnschrift';
+  cursor: pointer;
+}
+
+.Formbutton:hover {
+  color: #1EA5E0;
+  background-color: white;
+  border: 3px solid #1EA5E0;
+  box-shadow: 10px 10px 75px rgb(204, 240, 255);
+  transition: 0.4s;
+}
+
+#Hireme {
+  /* margin-top: -154%; */
+}
+
+.Form {
+  overflow: hidden;
+  width: 100%;
+  height: 84.1%;
+  display: none;
+  margin-top: 2.3%;
+  position: fixed;
+  z-index: 5;
+  background-color: rgb(253, 253, 253);
+  /* animation: appearone 1.2s; */
+}
+
+@keyframes fadeout {
+  0% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+.Theform {
+  margin-left: 48%;
+  margin-top: -39%;
+  text-align: center;
+}
+
+#Workers {
+  height: 100%;
+  width: 55%;
+  margin-left: -8%;
+  z-index: 1;
+}
+
+#Back {
+  font-size: 35px;
+  color: white;
+  margin-left: -275%;
+  margin-top: -5%;
+  z-index: 10;
+}
+
+#Back:hover {
+  color: rgb(212, 212, 212);
+  transition: 0.4s;
+}
+
+.Footerhome {
+  background-color: #0e0e0e;
+  height: 50px;
+  margin-top: 43.3%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  font-size: 14px;
+  cursor: auto;
+  /* position: relative; */
+}
+
+#Socialmedia {
+  font-size: 20px;  
+}
+
+#Socialmedia:hover {
+  color: rgb(187, 187, 187);
+  transition: 0.6s;  
+}
+
+#Prompt {
+  font-family: 'Bahnschrift Semibold';
+}
+
+#name, #mail {
+  background-color: rgb(236, 236, 236);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 40px;
+  width: 40%;
+  min-width: 200px;
+  border: none;
+}
+
+#message {
+  background-color: rgb(236, 236, 236);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 165px;
+  text-align: justify;
+  vertical-align: text-top;
+  resize: none;
+  width: 82%;
+  margin-top: 2%;
+  min-width: 200px;
+  border: none;
+}
+
+#submitform {
+  background-color: rgb(40, 170, 226);
+  color: white;
+  font-size: 22px;
+  border: 2px solid rgb(157, 199, 218);
+  border-radius: 25px;
+  height: 50px;
+  width: 25%;
+  font-family: 'Bahnschrift';
+}
+
+#submitform:hover{
+  color: white;
+  background-color: rgb(84, 200, 250);
+  box-shadow: 2px 2px 10px rgb(44, 44, 44);
+  transition: 0.9s;
+}
+
+.Aboutme {
+  margin-top: 16%;
+  margin-left: 12.7%;
+  position: fixed;
+  z-index: 1;
+}
+
+#WhoAmI {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-family: 'League Spartan';
+  font-size: 44px;
+  animation: appearone 1s;
+}
+
+#Line {
+  background-color: white;
+  font-size: 10px;
+  width: 0.1%;
+  height: 333px;
+  margin-left: 61%;
+  margin-top: -37%;
+  animation: appeartwo 0.5s;
+}
+
+#Iam {
+  color: white;
+  font-size: 23px;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: -43%;
+  margin-left: 73%;
+  text-align: start;
+  animation: appeartwo 1s;
+}
+
+.Skills {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgb(253, 253, 253);
+  margin-top: 46%;
+  z-index: 10;
+}
+
+#Offer {
+  font-family: 'League Spartan';
+  font-size: 42px;
+}
+
+#htmllogo, #csslogo, #jslogo, #reactlogo {
+  background-color: white;
+  text-align: center;
+  font-size: 80px;
+  border-radius: 105px;
+  border: 0.5px solid black;
+  width: 101px;
+  height: 80px;
+  text-shadow: 0.5px 0.5px 0.5px rgb(63, 63, 63);
+}
+
+#htmllogo {
+  color: #eb773d;
+}
+
+#htmllogo:hover {
+  color: white;
+  background-color: #eb773d;
+  text-shadow: none;
+  transition: 0.4s;
+}
+
+#csslogo {
+  color: #577fba;
+}
+
+#csslogo:hover {
+  color: white;
+  background-color: #577fba;
+  text-shadow: none;
+  transition: 0.4s;
+}
+
+#jslogo {
+  color: #cfc704;
+}
+
+#jslogo:hover {
+  color: white;
+  background-color: #cfc704;
+  text-shadow: none;
+  transition: 0.4s;
+}
+
+#reactlogo {
+  color: #5ec6db;
+}
+
+#reactlogo:hover {
+  color: white;
+  background-color: #5ec6db;
+  text-shadow: none;
+  transition: 0.4s;
+}
+
+.Logolabel {
+  margin-top: -12%;
+  margin-left: 8.8%;
+}
+
+#Label {
+  font-family: 'Bahnschrift';
+  font-size: 25px;
+}
+
+.Whyme {
+  background-color: #252525;
+  margin-top: -2%;
+  font-family: 'Bahnschrift';
+  font-size: 32px;
+  color: white;
+  width: 100%;
+  height: 64%;
+  position: relative;
+  z-index: 10;
+}
+
+#Whyhireme {
+  font-family: 'League Spartan';
+  font-size: 42px;
+}
+
+#Reasons {
+  color: orange;
+  animation: appearone 1.5s;
+}
+
+.Footerabout {
+  background-color: #0e0e0e;
+  height: 50px;
+  margin-top: 0%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  font-size: 14px;
+  cursor: auto;
+  /* position: relative; */
+}
+
+.Scrolldown {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-family: 'League Spartan';
+  font-size: 54px;
+  margin-top: 16%;
+  margin-left: 12.7%;
+  position: fixed;
+  z-index: 1;
+  animation: appearone 1s;
+}
+
+.Theprojects {
+  width: 100%;
+  height: 83%;
+  position: relative;
+  background-color: rgb(253, 253, 253);
+  margin-top: 46%;
+  overflow: auto;
+  z-index: 10;
+}
+
+#Myprojects {
+  font-family: 'League Spartan';
+  font-size: 42px;
+}
+
+/* .Allprojects {
+  margin-left: 2.5%;
+} */
+
+.Projectlogos {
+  height: 111px;
+  width: 350px;
+  filter: brightness(85%);
+  border: 2px groove black;
+}
+
+.Projectlogos:hover {
+  box-shadow: 3px 3px 15px black;
+  /* transform: scale(1); */
+  filter: brightness(100%);
+  transition: 0.7s;
+}
+
+.Black {
+  width: 100%;
+  height: 595px;
+  background-color: rgb(24, 24, 24);
+  opacity: 80%;
+  margin-top: -77%;
+  z-index: 5;
+  position: fixed;
+  display: none;
+  animation: appearthree 1.1s;
+}
+
+.Preview {
+  overflow: auto;
+  width: 80%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  opacity: 100%;
+  border-radius: 10px;
+  margin-top: -73%;
+  margin-left: 10%;
+  z-index: 6;
+  position: fixed;
+  display: none;
+  animation: appearone 1.1s;
+}
+
+#Backtwo {
+  font-size: 35px;
+  color: white;
+  margin-left: -95%;
+  margin-top: 1%;
+  z-index: 10;
+}
+
+.Projectname {
+  font-size: 40px;
+  margin-left: 55%;
+  margin-top: 7%;
+}
+
+.Projectdesc {
+  margin-left: 53%;
+  /* text-align: right; */
+}
+
+.Projectvid {
+  margin-left: -6.5%;
+  margin-top: -18%;
+}
+
+.Projectgithub {
+  background-color: rgb(55, 80, 226);
+  border-radius: 10px;
+  border-width: 4px;
+  font-family: 'Bahnschrift';
+  border-color: rgb(96, 112, 202);
+  width: 20%;
+  font-size: 25px;
+  height: 50px;
+  margin-left: 12%;
+  /* margin-top: -11%; */
+  color: white;
+}
+
+.Projectgithub:hover {
+  background-color: rgb(77, 101, 241);
+  border-color: rgb(173, 185, 241);
+  transition: 0.6s;
+}
+
+.Footerproject {
+  background-color: #0e0e0e;
+  height: 50px;
+  margin-top: 2%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  font-size: 14px;
+  cursor: auto;
+  /* position: relative; */
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
